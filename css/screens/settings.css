@@ -1,0 +1,38 @@
+.settings__setting{
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@keyframes settingIcon {
+    0% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+.settings__setting i {
+    opacity: 0.8;
+    margin-right: 20px;
+    font-size: 22px;
+}
+
+.fa-bullhorn:hover,
+.fa-flask:hover,
+.fa-info-circle:hover {
+    animation: settingIcon 0.5s linear infinite;
+    color: var(--yellow);
+    transition: 0.5s;
+}
+
+.settings__setting-column:last-child {
+    opacity: 0.5;
+}
